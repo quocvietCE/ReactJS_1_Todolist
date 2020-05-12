@@ -1,12 +1,18 @@
 import React, { Component } from 'react'
+import './TodoItem.css';
 
 class TodoItem extends Component {
     render() {
-        return (
-                <div className="TodoItem">
-                    <p>{this.props.title}</p>
-                </div>
-            );
+        const {item} = this.props;
+        var className = "TodoItem";
+        if (item.isComplete) {
+            className += " TodoItem-Complete";
+        }
+          return (
+            <div className={className}>
+              <p>{item.title}</p>
+            </div>
+          );
     }
 }
 
