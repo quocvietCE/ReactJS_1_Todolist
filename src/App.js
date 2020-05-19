@@ -14,9 +14,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {this.todoItems.map((item, i) => (
+        {this.todoItems.length > 0 ? this.todoItems.map((item, i) => (
           <TodoItem item={item} key={i} />
-        ))}
+        )) : 'Nothing Here'}
       </div>
     );
   }
