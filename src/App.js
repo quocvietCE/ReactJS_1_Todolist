@@ -12,6 +12,7 @@ class App extends Component {
         { title: "Mua bim bim", isComplete: true },
         { title: "Đi đá bóng", isComplete: false },
         { title: "Đi đổ xăng", isComplete: false },
+		
       ],
     };
   }
